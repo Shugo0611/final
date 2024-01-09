@@ -8,5 +8,5 @@
 
 システム名  ：　ポケモンシステム
 
-ＵＲＬ  ：
+ＵＲＬ  ：http://aso2201171.vivian.jp/final/src/index.html
 
