@@ -1,8 +1,8 @@
 <?php
-const SERVER = 'mysql215.phy.lolipop.lan';
+const SERVER = 'mysql220.phy.lolipop.lan';
 const DBNAME = 'LAA1518848-final';
 const USER = 'LAA1518848';
-const PASS = 'Pass0611';
+const PASS = 'Nagamine15';
 $connect = 'mysql:host='.SERVER.';dbname='.DBNAME.';charset=utf8';
 ?>
 <!DOCTYPE html>
@@ -12,9 +12,9 @@ $connect = 'mysql:host='.SERVER.';dbname='.DBNAME.';charset=utf8';
     <title>練習6-8</title>
 </head>
 <body>
-    <h1>商品一覧</h1>
+    <h1>ポケモン一覧</h1>
     <hr>
-    <button onclick="location.href='ren6-5-input.php'">商品を登録する</button>
+    <button onclick="location.href='addition.php'">商品を登録する</button>
     <table>
         <tr><th>番号</th><th>名前</th><th>タイプ</th><th>更新</th><th>削除</th></tr>
     <?php
@@ -25,13 +25,13 @@ $connect = 'mysql:host='.SERVER.';dbname='.DBNAME.';charset=utf8';
         echo '<td>', $row['name'], '</td>';
         echo '<td>', $row['type'], '</td>';
         echo '<td>';
-        echo '<form action="ren6-8-edit.php" method="post">';
+        echo '<form action="update.php" method="post">';
         echo '<input type="hidden" name="id" value="', $row['id'], '">';
         echo '<button type="submit">更新</button>';
         echo '</form>';
         echo '</td>';
         echo '<td>';
-        echo '<form action="ren6-8-delete.php" method="post">';
+        echo '<form action="delete.php" method="post">';
         echo '<input type="hidden" name="id" value="', $row['id'], '">';
         echo '<button type="submit">削除</button>';
         echo '</form>';
