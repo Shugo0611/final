@@ -8,6 +8,7 @@ $connect = 'mysql:host='.SERVER.';dbname='.DBNAME.';charset=utf8';
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <title>練習6-8</title>
 </head>

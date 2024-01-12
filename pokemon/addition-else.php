@@ -33,7 +33,7 @@ if (!preg_match('/^\d+$/', $_POST['id'])) {
 
 <br><hr><br>
 <table>
-    <tr><th>商品番号</th><th>商品名</th><th>価格</th></tr>
+    <tr><th>番号</th><th>名前</th><th>タイプ</th></tr>
     <?php
     foreach ($pdo->query('select * from POKEMON') as $row) {
         echo '<tr>';
